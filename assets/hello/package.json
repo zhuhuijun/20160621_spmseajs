@@ -1,0 +1,12 @@
+{
+  "name":"hello",
+  "family":"hellospm",
+  "version":"0.0.1",
+  "spm":{
+    "dependencies": {
+      "$": "$"
+    },
+    "output":["./hello.js"]
+  }
+
+}

@@ -1,0 +1,103 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'D:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'D:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'spm-deploy' ]
+2 info using npm@3.5.2
+3 info using node@v0.12.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData spm-deploy
+8 silly fetchNamedPackageData spm-deploy
+9 silly mapToRegistry name spm-deploy
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/spm-deploy
+13 verbose request uri https://registry.npmjs.org/spm-deploy
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 11:34:49
+16 verbose request id 6f0224bfbff649e9
+17 http request GET https://registry.npmjs.org/spm-deploy
+18 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+19 info attempt registry request try #2 at 11:35:20
+20 http request GET https://registry.npmjs.org/spm-deploy
+21 info retry will retry, error on last attempt: Error: read ECONNRESET
+22 info attempt registry request try #3 at 11:37:42
+23 http request GET https://registry.npmjs.org/spm-deploy
+24 http 404 https://registry.npmjs.org/spm-deploy
+25 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 verbose headers   etag: '"9AYQSC4EDKC7TZOIMJXYJR9A8"',
+25 verbose headers   'content-type': 'application/json',
+25 verbose headers   'cache-control': 'max-age=0',
+25 verbose headers   'content-length': '1042',
+25 verbose headers   'accept-ranges': 'bytes',
+25 verbose headers   date: 'Tue, 21 Jun 2016 03:37:44 GMT',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   age: '0',
+25 verbose headers   connection: 'keep-alive',
+25 verbose headers   'x-served-by': 'cache-ams4135-AMS',
+25 verbose headers   'x-cache': 'MISS',
+25 verbose headers   'x-cache-hits': '0',
+25 verbose headers   'x-timer': 'S1466480264.252230,VS0,VE723',
+25 verbose headers   vary: 'Accept-Encoding' }
+26 silly get cb [ 404,
+26 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly get     etag: '"9AYQSC4EDKC7TZOIMJXYJR9A8"',
+26 silly get     'content-type': 'application/json',
+26 silly get     'cache-control': 'max-age=0',
+26 silly get     'content-length': '1042',
+26 silly get     'accept-ranges': 'bytes',
+26 silly get     date: 'Tue, 21 Jun 2016 03:37:44 GMT',
+26 silly get     via: '1.1 varnish',
+26 silly get     age: '0',
+26 silly get     connection: 'keep-alive',
+26 silly get     'x-served-by': 'cache-ams4135-AMS',
+26 silly get     'x-cache': 'MISS',
+26 silly get     'x-cache-hits': '0',
+26 silly get     'x-timer': 'S1466480264.252230,VS0,VE723',
+26 silly get     vary: 'Accept-Encoding' } ]
+27 silly fetchPackageMetaData Error: Registry returned 404 for GET on https://registry.npmjs.org/spm-deploy
+27 silly fetchPackageMetaData     at makeError (D:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+27 silly fetchPackageMetaData     at CachingRegistryClient.<anonymous> (D:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+27 silly fetchPackageMetaData     at Request._callback (D:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+27 silly fetchPackageMetaData     at Request.self.callback (D:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:198:22)
+27 silly fetchPackageMetaData     at Request.emit (events.js:110:17)
+27 silly fetchPackageMetaData     at Request.<anonymous> (D:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1082:10)
+27 silly fetchPackageMetaData     at Request.emit (events.js:129:20)
+27 silly fetchPackageMetaData     at IncomingMessage.<anonymous> (D:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1009:12)
+27 silly fetchPackageMetaData     at IncomingMessage.emit (events.js:129:20)
+27 silly fetchPackageMetaData     at _stream_readable.js:908:16
+27 silly fetchPackageMetaData  error for spm-deploy { [Error: Registry returned 404 for GET on https://registry.npmjs.org/spm-deploy] pkgid: 'spm-deploy', statusCode: 404, code: 'E404' }
+28 silly rollbackFailedOptional Starting
+29 silly rollbackFailedOptional Finishing
+30 silly runTopLevelLifecycles Starting
+31 silly runTopLevelLifecycles Finishing
+32 silly install printInstalled
+33 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/spm-deploy
+33 verbose stack     at makeError (D:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+33 verbose stack     at CachingRegistryClient.<anonymous> (D:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:242:14)
+33 verbose stack     at Request._callback (D:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+33 verbose stack     at Request.self.callback (D:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:198:22)
+33 verbose stack     at Request.emit (events.js:110:17)
+33 verbose stack     at Request.<anonymous> (D:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1082:10)
+33 verbose stack     at Request.emit (events.js:129:20)
+33 verbose stack     at IncomingMessage.<anonymous> (D:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1009:12)
+33 verbose stack     at IncomingMessage.emit (events.js:129:20)
+33 verbose stack     at _stream_readable.js:908:16
+34 verbose statusCode 404
+35 verbose pkgid spm-deploy
+36 verbose cwd D:\git\20160621_spm\assets\util
+37 error Windows_NT 6.1.7601
+38 error argv "D:\\Program Files\\nodejs\\\\node.exe" "D:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "spm-deploy"
+39 error node v0.12.0
+40 error npm  v3.5.2
+41 error code E404
+42 error 404 Registry returned 404 for GET on https://registry.npmjs.org/spm-deploy
+43 error 404
+44 error 404 'spm-deploy' is not in the npm registry.
+45 error 404 You should bug the author to publish it (or use the name yourself!)
+46 error 404 Note that you can also install from a
+47 error 404 tarball, folder, http url, or git url.
+48 verbose exit [ 1, true ]
